@@ -1,0 +1,60 @@
+<fieldset>{{- '' -}}
+  <legend id="pref_theme">{{- _('Theme') -}}</legend>{{- '' -}}
+  <div class="value">{{- '' -}}
+    <select name="theme" aria-labelledby="pref_theme">{{- '' -}}
+      {%- for name in themes -%}
+        <option value="{{ name }}"
+                {%- if name == theme %} selected="selected"{%- endif -%}>
+                {{- name | capitalize -}}
+        </option>
+      {%- endfor -%}
+    </select>{{- '' -}}
+  </div>{{- '' -}}
+  <div class="description">
+    {{- _('Change the layout of SearXNG') -}}
+  </div>{{- '' -}}
+</fieldset>{{- '' -}}
+
+<fieldset>{{- '' -}}
+  <legend id="pref_simple_style">{{- _('Theme style') -}}</legend>{{- '' -}}
+  <div class="value">{{- '' -}}
+    <select name="simple_style" aria-labelledby="pref_simple_style">
+      {%- for name in ['auto', 'light', 'dark', 'black'] -%}
+        <option value="{{ name }}"
+                {%- if name == preferences.get_value('simple_style') %} selected="selected" {%- endif -%}>
+                {{- _(name) | capitalize -}}
+        </option>
+      {%- endfor -%}
+    </select>{{- '' -}}
+  </div>{{- '' -}}
+  <div class="description">
+    {{- _('Choose auto to follow your browser settings') -}}
+  </div>{{- '' -}}
+</fieldset>{{- '' -}}
+
+{%- include 'simple/preferences/center_alignment.html' -%}
+
+<fieldset data-orbit-preference hidden>{{- '' -}}
+  <legend id="pref_orbit_enable">Orbit</legend>{{- '' -}}
+  <p class="value">{{- '' -}}
+    <input type="checkbox" class="checkbox-onoff" data-orbit-toggle="enableOrbit" aria-labelledby="pref_orbit_enable">{{- '' -}}
+  </p>{{- '' -}}
+  <div class="description">The ELECTRIS cursor follower. Saved in this browser only, not in your SearXNG cookie.</div>{{- '' -}}
+</fieldset>{{- '' -}}
+
+<fieldset data-orbit-preference hidden>{{- '' -}}
+  <legend id="pref_orbit_adaptive">Orbit adaptive colour</legend>{{- '' -}}
+  <p class="value">{{- '' -}}
+    <input type="checkbox" class="checkbox-onoff" data-orbit-toggle="adaptiveOrbitColor" aria-labelledby="pref_orbit_adaptive">{{- '' -}}
+  </p>{{- '' -}}
+  <div class="description">Let Orbit take on the colour of the text it wraps.</div>{{- '' -}}
+</fieldset>{{- '' -}}
+
+<fieldset data-orbit-preference hidden>{{- '' -}}
+  <legend id="pref_orbit_spacing">Orbit text wrap spacing</legend>{{- '' -}}
+  <div class="value orbit-spacing">{{- '' -}}
+    <input type="range" min="0.1" max="1" step="0.01" data-orbit-spacing aria-labelledby="pref_orbit_spacing">{{- '' -}}
+    <output data-orbit-spacing-value></output>{{- '' -}}
+  </div>{{- '' -}}
+  <div class="description">How much room Orbit leaves around a word or sentence.</div>{{- '' -}}
+</fieldset>{{- '' -}}
