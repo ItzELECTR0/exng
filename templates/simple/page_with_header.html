@@ -1,0 +1,7 @@
+{%- set body_class = "page_with_header" -%}
+{%- extends "simple/base.html" -%}
+{%- block header -%}
+  <a href="{{ url_for('index') }}" class="electris-page-logo">{{- '' -}}
+    <img src="{{ url_for('static', filename='themes/simple/electris/logo.png') }}" alt="ELECTRIS">{{- '' -}}
+  </a>{{- '' -}}
+{%- endblock -%}

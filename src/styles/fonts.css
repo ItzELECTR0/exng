@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Aileron';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/Aileron/Aileron-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Aileron';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Aileron/Aileron-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Aileron';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/Aileron/Aileron-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Aileron';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/Aileron/Aileron-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Letric';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Letric/Letric_Demo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Redwing';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/Redwing/Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Redwing';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Redwing/Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Redwing';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/Redwing/Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Redwing';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/Redwing/Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Tourner';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/Tourner/Tourner.ttf') format('truetype');
+}

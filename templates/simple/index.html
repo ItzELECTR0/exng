@@ -1,0 +1,11 @@
+{% extends "simple/base.html" %}
+{% from 'simple/icons.html' import icon_big %}
+{% block content %}
+<div class="index">
+    <h1 class="electris-hero">
+        <span class="title-main">ELECTRIS</span>
+        <span class="title-sub">{{ _('search') | capitalize }}</span>
+    </h1>
+    {% include 'simple/simple_search.html' %}
+</div>
+{% endblock %}

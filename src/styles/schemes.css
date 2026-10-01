@@ -1,0 +1,150 @@
+/* The ELECTRIS.net colour schemes. SearXNG's "black" style maps to Midnight.
+
+   Dark carries `:root` as well, so the page still renders dark if the attribute is missing.
+   The light roles appear twice: once for the explicit Light style and once for Auto under a
+   light system preference. Keep the two light blocks identical. */
+
+:root,
+[data-color-scheme="dark"] {
+  --surface-page: hsl(160, 7%, 8%);
+  --surface-raised: #222;
+  --surface-sunken: #1a1a1a;
+  --surface-overlay: hsl(0, 0%, 13%);
+  --surface-nav: #0f1010;
+
+  --text-secondary: #e0e0e0;
+  --text-muted: #a0a0a0;
+
+  --accent: hsl(22, 99%, 48%);
+  --accent-hover: hsl(22, 100%, 53%);
+  --brand-electris: #ffa251;
+  --brand-electro: #00ffaa;
+
+  --scrim-page: rgba(0, 0, 0, 0.2);
+
+  --status-positive-bg: rgba(90, 210, 57, 0.05);
+  --status-positive-border: rgba(90, 210, 57, 0.3);
+  --status-negative-bg: rgba(255, 51, 51, 0.05);
+  --status-negative-border: rgba(255, 51, 51, 0.3);
+
+  --shadow-sm: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.28);
+  --shadow-lg: 0 1.2rem 2.8rem rgba(0, 0, 0, 0.36);
+
+  --orbit-border: hsl(22, 99%, 48%);
+  --circle-hover-search: hsl(28, 97%, 55%);
+  --circle-hover-footer: hsl(28, 100%, 70%);
+
+  --electrical-bg: radial-gradient(circle at 20% 30%, rgba(255, 123, 0, 0.3) 0%, transparent 50%),
+                   radial-gradient(circle at 80% 70%, rgba(255, 123, 0, 0.3) 0%, transparent 50%);
+}
+
+[data-color-scheme="light"] {
+  --surface-page: #f5f1f8;
+  --surface-raised: #dedede;
+  --surface-sunken: #f0f0f0;
+  --surface-overlay: #e7e7e7;
+  --surface-nav: #f8f9fa;
+
+  --text-secondary: #333333;
+  --text-muted: #666666;
+
+  --accent: #ff5608;
+  --accent-hover: #ff6811;
+  --brand-electris: #ff983e;
+  --brand-electro: #00bf80;
+
+  --scrim-page: rgba(0, 0, 0, 0.2);
+
+  --status-positive-bg: rgba(90, 210, 57, 0.05);
+  --status-positive-border: rgba(82, 218, 45, 0.349);
+  --status-negative-bg: rgba(255, 51, 51, 0.05);
+  --status-negative-border: rgba(255, 25, 25, 0.349);
+
+  --shadow-sm: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 1.2rem 2.8rem rgba(0, 0, 0, 0.16);
+
+  --orbit-border: #ff5608;
+  --circle-hover-search: hsl(28, 97%, 55%);
+  --circle-hover-footer: #ffa366;
+
+  --electrical-bg: radial-gradient(circle at 20% 30%, rgba(255, 151, 55, 0.5) 0%, transparent 50%),
+                   radial-gradient(circle at 80% 70%, rgba(255, 151, 55, 0.5) 0%, transparent 50%);
+}
+
+@media (prefers-color-scheme: light) {
+  [data-color-scheme="auto"] {
+    --surface-page: #f5f1f8;
+    --surface-raised: #dedede;
+    --surface-sunken: #f0f0f0;
+    --surface-overlay: #e7e7e7;
+    --surface-nav: #f8f9fa;
+
+    --text-secondary: #333333;
+    --text-muted: #666666;
+
+    --accent: #ff5608;
+    --accent-hover: #ff6811;
+    --brand-electris: #ff983e;
+    --brand-electro: #00bf80;
+
+    --scrim-page: rgba(0, 0, 0, 0.2);
+
+    --status-positive-bg: rgba(90, 210, 57, 0.05);
+    --status-positive-border: rgba(82, 218, 45, 0.349);
+    --status-negative-bg: rgba(255, 51, 51, 0.05);
+    --status-negative-border: rgba(255, 25, 25, 0.349);
+
+    --shadow-sm: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 1.2rem 2.8rem rgba(0, 0, 0, 0.16);
+
+    --orbit-border: #ff5608;
+    --circle-hover-search: hsl(28, 97%, 55%);
+    --circle-hover-footer: #ffa366;
+
+    --electrical-bg: radial-gradient(circle at 20% 30%, rgba(255, 151, 55, 0.5) 0%, transparent 50%),
+                     radial-gradient(circle at 80% 70%, rgba(255, 151, 55, 0.5) 0%, transparent 50%);
+  }
+}
+
+[data-color-scheme="midnight"] {
+  --surface-page: hsl(0, 0%, 0.5%);
+  --surface-raised: #0a0a0a;
+  --surface-sunken: hsl(0, 0%, 2%);
+  --surface-overlay: hsl(0, 0%, 2%);
+  --surface-nav: #000000;
+
+  --text-secondary: #d0d0d0;
+  --text-muted: #909090;
+
+  --accent: hsl(22, 100%, 56%);
+  --accent-hover: hsl(22, 100%, 65%);
+  --brand-electris: #ffa251;
+  --brand-electro: #20ffb0;
+
+  --scrim-page: rgba(0, 0, 0, 0.4);
+
+  --status-positive-bg: rgba(110, 230, 80, 0.12);
+  --status-positive-border: rgba(110, 230, 80, 0.5);
+  --status-negative-bg: rgba(255, 80, 80, 0.12);
+  --status-negative-border: rgba(255, 80, 80, 0.5);
+
+  --shadow-sm: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 1.2rem 2.8rem rgba(0, 0, 0, 0.6);
+
+  --orbit-border: hsl(22, 100%, 56%);
+  --circle-hover-search: hsl(28, 85%, 42%);
+  --circle-hover-footer: hsl(28, 100%, 75%);
+
+  --electrical-bg: radial-gradient(circle at 20% 30%, rgba(255, 140, 0, 0.4) 0%, transparent 50%),
+                   radial-gradient(circle at 80% 70%, rgba(255, 140, 0, 0.4) 0%, transparent 50%);
+}
+
+:root {
+  --text-primary: var(--accent);
+  --text-on-accent: #ffffff;
+  --status-negative: #dc2626;
+}
